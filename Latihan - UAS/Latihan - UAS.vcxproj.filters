@@ -19,6 +19,9 @@
     <Filter Include="Header Files\Stack">
       <UniqueIdentifier>{6c86838a-d8a2-4270-9434-21b47b9badce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Graph">
+      <UniqueIdentifier>{8f1dab64-d82a-45a0-b61c-c377b24756b7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Latihan - UAS.cpp">
@@ -30,6 +33,9 @@
     <ClCompile Include="Stack\Stack.cpp">
       <Filter>Header Files\Stack</Filter>
     </ClCompile>
+    <ClCompile Include="Graph\Graph.cpp">
+      <Filter>Header Files\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Queue\Queue.h">
@@ -40,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="Stack\Stack.h">
       <Filter>Header Files\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\Graph.h">
+      <Filter>Header Files\Graph</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

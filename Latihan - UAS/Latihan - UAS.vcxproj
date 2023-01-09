@@ -127,12 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Graph\Graph.cpp" />
     <ClCompile Include="Latihan - UAS.cpp" />
     <ClCompile Include="Queue\Queue.cpp" />
     <ClCompile Include="Stack\Stack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Globals.h" />
+    <ClInclude Include="Graph\Graph.h" />
     <ClInclude Include="Queue\Queue.h" />
     <ClInclude Include="Stack\Stack.h" />
   </ItemGroup>
