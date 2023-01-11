@@ -8,13 +8,13 @@ int main()
     ListQ Q;
     adrQ delQ;
     initQ(Q);
-    enQ(Q, allocQ(3));
-    enQ(Q, allocQ(2));
-    enQ(Q, allocQ(1));
+    enQ(Q, allocQ('C'));
+    enQ(Q, allocQ('B'));
+    enQ(Q, allocQ('A'));
     showQ(Q);
     cout << "Deque";
     deQ(Q, delQ);
-    cout << "Deleted : " << delQ->info.nomor << endl;
+    cout << "Deleted : " << delQ->info << endl;
     showQ(Q);
     /**End Queue**/
     cout << "\n --------------------- \n";
@@ -51,4 +51,40 @@ int main()
     }
     showS(S);
     /** End Stack**/
+    /** Graph **/
+    adrG Graph, startBFS;
+    initG(Graph);
+    startBFS = allocNodeG('A');
+    addG(Graph, startBFS);
+    addG(Graph, allocNodeG('B'));
+    addG(Graph, allocNodeG('C'));
+    addG(Graph, allocNodeG('D'));
+    addG(Graph, allocNodeG('E'));
+    addG(Graph, allocNodeG('F'));
+    addEdge(Graph, 'A', 'B');
+    addEdge(Graph, 'B', 'C');
+    addEdge(Graph, 'C', 'E');
+    addEdge(Graph, 'D', 'E');
+    addEdge(Graph, 'E', 'F');
+    addEdge(Graph, 'G', 'D');
+    printG(Graph);
+    /** End Graph **/
+    cout << "\n --------------------- \n";
+
+    /** Tree**/
+    AdrNodeT root;
+    initT(root);
+    int data[13] = { 14,5,3,9,29,17,6,23,10,15,21,8,26 };
+    for (int i = 0; i < sizeof(data) / sizeof(int); i++) {
+        insertNodeT(root, allocNodeT(data[i]));
+        cout << data[i] << " ";
+    }
+
+    cout << "\n\nPre - Order\t:";
+    preOrder(root);
+    cout << "\nIn - Order\t:";
+    inOrder(root);
+    cout << "\nPost - Order\t:";
+    postOrder(root);
+    /** End Tree**/
 }

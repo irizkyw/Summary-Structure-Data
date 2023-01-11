@@ -22,6 +22,9 @@
     <Filter Include="Header Files\Graph">
       <UniqueIdentifier>{8f1dab64-d82a-45a0-b61c-c377b24756b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Tree">
+      <UniqueIdentifier>{e692b9dd-580e-4133-9f47-ec007ecc52b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Latihan - UAS.cpp">
@@ -36,6 +39,9 @@
     <ClCompile Include="Graph\Graph.cpp">
       <Filter>Header Files\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="BST Tree\Tree.cpp">
+      <Filter>Header Files\Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Queue\Queue.h">
@@ -49,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="Graph\Graph.h">
       <Filter>Header Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="BST Tree\Tree.h">
+      <Filter>Header Files\Tree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

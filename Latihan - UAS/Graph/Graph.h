@@ -1,10 +1,9 @@
 #include <iostream>
-#include "../Queue/Queue.h"
 
-struct infoG {
-	int data;
-	bool visited;
-};
+#include "../Queue/Queue.h"
+#include "../Stack/Stack.h"
+
+typedef char infoG;
 
 typedef struct NodeG* adrG;
 typedef struct EdgeG* adrGEdge;
@@ -19,6 +18,11 @@ struct EdgeG {
 	infoG dist;
 	adrGEdge edge_next;
 };
+
+typedef struct {
+	adrG head;
+	adrG tail;
+} QueueG;
 
 void initG(adrG& G);
 adrG allocNodeG(infoG data_baru);

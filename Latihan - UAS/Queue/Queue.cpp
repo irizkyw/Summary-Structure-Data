@@ -7,9 +7,9 @@ void initQ(ListQ& Q) {
 	Q.head = NULL;
 }
 
-adrQ allocQ(int databaru) {
+adrQ allocQ(infoQ databaru) {
 	adrQ alloc = new Queue;
-	alloc->info.nomor = databaru;
+	alloc->info = databaru;
 	alloc->next = NULL;
 
 	return alloc;
@@ -44,7 +44,7 @@ void showQ(ListQ Q) {
 		adrQ current = Q.head;
 		cout << "Queue : ";
 		while (current != NULL) {
-			cout << current->info.nomor << " ";
+			cout << current->info << " ";
 			current = current->next;
 		}
 	}

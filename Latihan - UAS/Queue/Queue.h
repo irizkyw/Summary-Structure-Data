@@ -1,7 +1,4 @@
-struct infoQ {
-	int nomor;
-};
-
+typedef char infoQ;
 typedef struct Queue* adrQ;
 
 struct Queue {
@@ -14,7 +11,7 @@ struct ListQ {
 };
 /** First in, first out**/
 void initQ(ListQ& Q);
-adrQ allocQ(int databaru);
+adrQ allocQ(infoQ databaru);
 void enQ(ListQ& Q, adrQ data_baru);
 void deQ(ListQ& Q, adrQ& del);
 
